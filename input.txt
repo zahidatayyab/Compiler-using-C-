@@ -1,0 +1,18 @@
+Function -> Type identifier ( ArgList ) CompoundStmt
+ArgList -> Arg| ArgList , Arg
+Arg -> Type identifier
+Declaration -> Type IdentList ;
+Type -> int| float
+IdentList -> identifier , IdentList|identifier
+Stmt -> WhileStmt| Expr ;| IfStmt| CompoundStmt| Declaration| ;
+WhileStmt -> while ( Expr ) Stmt
+IfStmt -> if ( Expr ) Stmt ElsePart
+ElsePart -> else Stmt | ^
+CompoundStmt -> { StmtList }
+StmtList -> StmtList Stmt |Stmt
+Expr -> identifier := Expr| Rvalue
+Rvalue -> RvalueCompare Mag| Mag
+Compare -> == | < | > | <= | >= | != | <>
+Mag -> Mag + Term| Mag -Term| Term
+Term -> Term * Factor| Term / Factor| Factor
+Factor -> ( Expr )| identifier| number

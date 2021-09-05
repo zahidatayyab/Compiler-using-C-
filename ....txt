@@ -1,0 +1,34 @@
+ArgList -> Arg ArgList' , Arg
+ArgList' -> , Arg ArgList' | ^
+StmtList -> Stmt StmtList' 
+StmtList' -> Stmt StmtList'|^
+Rvalue -> Mag Rvalue'
+Rvalue' -> Compare Mag Rvalue'| ^ 
+Mag -> Term Mag'
+Mag -> +Term Mag' | -Term Mag' | ^
+Term -> Factor Term'
+Term' -> *Factor Term'| /Factor Term' | ^
+  scan	 scan 	N	N	 scan 	 scan 	 scan 	 scan 	 scan 	  scan	  scan	  scan	  scan	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan	 scan	 pop
+  scan	 pop	N	N	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 
+  scan	N	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	N	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 
+  scan	 pop	N	N	 scan 	 scan 	 scan 	 scan 	 pop	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 
+ pop	 scan 	N	N	 pop	 pop	pop 	pop 	 scan 	pop 	pop 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	pop 	pop 	 scan 
+  scan	  scan	N	N	 scan 	 scan 	 scan 	 pop	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 pop	  scan	  scan
+ scan 	 scan 	 scan 	 scan 	  scan	  scan	  scan	 pop	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	  scan	  scan	  scan	 scan 	N	 scan 	 scan 
+N	  scan	N	N	 pop	N	N	N	  scan	N	pop 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan	  scan	 scan 	  scan	 scan 	 scan 	N	 N	 scan 
+ pop	 scan 	pop 	pop 	pop 	N	pop 	pop 	 scan 	pop 	pop 	  scan	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 pop	 pop	 scan 
+ pop	 scan 	pop 	pop 	pop 	pop 	N	pop 	  scan	pop 	pop 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	pop 	pop 	 scan 
+N	  scan	N	N	N	N	N	N	  scan	N	N	  scan	  scan	  scan	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	N	N	 scan 
+ pop	 scan 	pop 	pop 	pop 	pop 	pop 	pop 	 scan 	N	 pop	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	pop 	pop 	 pop
+N	  scan	N	N	 scan 	N	N	N	 scan 	N	 pop	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	N	N	 scan 
+N	  scan	N	N	 scan 	N	N	N	 scan 	N	N	 scan 	  scan	  scan	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	N	N	 scan 
+N	 pop	  scan	  scan	 scan 	 scan 	 scan 	 pop	 scan 	 scan 	 scan 	 scan 	 scan 	 scan	  scan	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	N	N	 scan 
+N	 pop	  scan	 scan	 scan 	 scan 	 scan 	 pop	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	 scan 	N	N	 scan 
+ scan	N 	 scan 	 scan 	 scan 	 scan 	 scan	 N	 scan 	 scan 	 scan 	N	N	N	N	N	N	N	 scan 	 scan 	 scan 	 scan 	 scan	 scan	 scan 
+ pop	pop 	  scan	 scan 	 scan 	 scan 	 scan 	 pop	 scan 	 scan 	 scan 	N	N	N	N	N	N	N	 scan 	 scan 	 scan 	 scan 	 pop	pop 	 scan 
+N	 pop	  scan	 scan	 scan	 scan 	 scan 	 pop	 scan 	 scan 	 scan 	 pop	pop	pop	pop	pop 	pop 	pop 	 scan 	 scan 	 scan 	 scan 	N	N	 scan
+  scan	 N	 scan 	 scan 	 scan 	 scan 	 scan 	N	 scan 	 scan 	 scan 	N	N	N	N	N	N	N	N	N	 scan 	 scan 	 scan 	 scan 	 scan 
+N	 pop	 scan 	 scan 	 scan 	 scan 	 scan 	pop 	 scan 	 scan 	 scan 	pop 	pop 	 pop	 pop	pop 	pop 	pop 	pop 	 pop	  scan	 scan 	N	N	 scan 
+  scan	N	 scan 	 scan 	 scan 	 scan 	 scan 	N	 scan 	 scan 	 scan 	N	N	N	N	N	N	N	N	N	N	N	  scan	  scan	 scan 
+N	 pop	 scan 	 scan 	 scan 	 scan 	 scan 	pop 	 scan 	 scan 	 scan 	pop 	pop 	pop	pop 	pop 	pop 	pop 	pop 	pop 	pop 	pop 	N	N	 scan 
+

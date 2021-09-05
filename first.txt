@@ -1,0 +1,23 @@
+Function|Int ,float
+ArgList|Int , float
+ArgList’|‚  €    
+Arg|Int, float
+Declaration|Int, float
+Type|Int , float
+IdentList|identifier
+Stmt|While,identifier, ( ,number, if, {, int , float, ;
+WhileStmt|while
+IfStmt|if
+ElsePart|else , €
+CompoundStmt|{     
+StmtList|While, identifier, ( ,number, if, {, int, float, ; 
+StmtList’|While, identifier, ( ,number, if, {, int, float, ; , €
+Expr|identifier, ( ,number
+Rvalue|( , identifier, number
+Rvalue’|== , < , > , <= , >= , != , <>, €
+Compare|== , < , > , <= , >= , != , <>
+Mag|( , identifier, number
+Mag’|+, -, €
+Term|( , identifier, number
+Term’|*, /, €
+Factor|( , identifier , number

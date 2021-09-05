@@ -1,0 +1,23 @@
+Function|$
+ArgList|)
+ArgList’|)
+Arg|, )
+Declaration|Else, While, identifier, ( ,number, if, {, int, float, ; , } 
+Type|Identifier, ;
+IdentList|;
+Stmt|Else, While, identifier, ( ,number, if, {, int, float, ; , } 
+WhileStmt|Else, While, identifier, ( ,number, if, {, int, float, ; , } 
+IfStmt|Else, While, identifier, ( ,number, if, {, int, float, ; , } 
+ElsePart|Else, While, identifier, ( ,number, if, {, int, float, ; , } 
+CompoundStmt|$,Else, While, identifier, ( ,number, if, {, int, float, ; , } 
+StmtList|}
+StmtList’|}
+Expr| ; , )
+Rvalue| ; , )
+Rvalue’|; , )
+Compare|( , identifier, number , == , < , > , <= , >= , != , <> , ; , )
+Mag|== , < , > , <= , >= , != , <>, ; , )
+Mag’|== , < , > , <= , >= , != , <>, ; , )
+Term|+, - , == , < , > , <= , >= , != , <>, ; , )
+Term’|+, - , == , < , > , <= , >= , != , <>, ; , )
+Factor|*, / , +, - , == , < , > , <= , >= , != , <>, ; , )
